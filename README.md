@@ -3,6 +3,7 @@
 ```sh
 $ npm install # install dependencies
 $ npm test    # run tests
+$ npm start   # run commands in commands.txt
 ```
 
 ## Toy Robot Simulator
