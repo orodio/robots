@@ -9,7 +9,6 @@ function Position(/* x,y || {x,y,direction} */) {
 
 Position.prototype = {
   report: function () { return [this.x, this.y, this.direction].join(); },
-  obj: function () { return {x: this.x, y: this.y, direction: this.direction}; },
 
   turn: function (dir) {
     var _dir = directions[this.direction][dir];
