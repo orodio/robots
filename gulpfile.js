@@ -3,7 +3,6 @@ var gulp    = require('gulp'),
 
 gulp.task('test', function () {
   gulp.src([
-    'robot_test.js',
     'libs/**/*_test.js'
   ]).pipe(jasmine());
 });
