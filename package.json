@@ -1,0 +1,18 @@
+{
+  "name": "robots",
+  "version": "0.0.0",
+  "description": "robots",
+  "main": "robot.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "keywords": [
+    "robots"
+  ],
+  "author": "orodio",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-jasmine": "~0.2.0",
+    "gulp": "~3.6.2"
+  }
+}
