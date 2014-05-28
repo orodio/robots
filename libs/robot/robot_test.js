@@ -4,17 +4,17 @@ describe('Robot: ', function () {
   describe('Wont do anything until you put it on the table: ', function () {
     var robot = new Robot();
     it('Wont Move', function () { expect(robot.move().position).toBe(undefined); });
-    it('Wont Turn Left',  function () { expect(robot.left().position).toBe(undefined); });
+    it('Wont Turn Left', function () { expect(robot.left().position).toBe(undefined); });
     it('Wont Turn Right', function () { expect(robot.right().position).toBe(undefined); });
-    it('Special Report',  function () { expect(robot.report()).toBe('place me'); });
+    it('Special Report', function () { expect(robot.report()).toBe('place me'); });
   });
 
   describe('It wont go anywhere but the table: ', function () {
     var robot = new Robot();
-    it('Wont go above it',    function () { expect(robot.place(0,100,"NORTH").position).toBe(undefined); });
-    it('Wont go below it',    function () { expect(robot.place(0,-100,"NORTH").position).toBe(undefined); });
+    it('Wont go above it', function () { expect(robot.place(0,100,"NORTH").position).toBe(undefined); });
+    it('Wont go below it', function () { expect(robot.place(0,-100,"NORTH").position).toBe(undefined); });
     it('Wont go right of it', function () { expect(robot.place(100,0,"NORTH").position).toBe(undefined); });
-    it('Wont go left of it',  function () { expect(robot.place(-100,0,"NORTH").position).toBe(undefined); });
+    it('Wont go left of it', function () { expect(robot.place(-100,0,"NORTH").position).toBe(undefined); });
   });
 
   describe('It will go on the table though: ', function () {

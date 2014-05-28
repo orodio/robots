@@ -2,8 +2,9 @@
   "name": "robots",
   "version": "0.0.0",
   "description": "robots",
-  "main": "robot.js",
+  "main": "start.js",
   "scripts": {
+    "start": "node start.js",
     "test": "gulp test"
   },
   "keywords": [
@@ -14,5 +15,8 @@
   "devDependencies": {
     "gulp-jasmine": "~0.2.0",
     "gulp": "~3.6.2"
+  },
+  "dependencies": {
+    "lodash": "~2.4.1"
   }
 }

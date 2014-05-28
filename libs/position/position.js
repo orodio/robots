@@ -1,9 +1,4 @@
-var directions = {
-  "NORTH" : { key: "NORTH", right: "EAST",  left: "WEST",  movement: {x:0, y:1}  },
-  "EAST"  : { key: "EAST",  right: "SOUTH", left: "NORTH", movement: {x:1, y:0}  },
-  "SOUTH" : { key: "SOUTH", right: "WEST",  left: "EAST",  movement: {x:0, y:-1} },
-  "WEST"  : { key: "WEST",  right: "NORTH", left: "SOUTH", movement: {x:-1, y:0} }
-};
+var directions = require('./directions');
 
 function Position(/* x,y || {x,y,direction} */) {
   var useArgs = arguments.length > 1;
